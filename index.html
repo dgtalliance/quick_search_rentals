@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="keywords" content="" />
+  <meta name="description" content="IDXBoost">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- APP HEADER COLOR -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="">
+  <meta name="theme-color" content="">
+  <meta name="msapplication-navbutton-color" content="">
+
+  <link rel="preconnect" href="//stats.pusher.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet preload prefetch" as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+</head>
+<style>
+  /*TODO ESTO ES SOLO PARA LA DEMO*/
+  body{
+    font-family: "Open Sans",sans-serif!important;
+    margin: 0;
+    padding: 0;
+  }
+
+  body *{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-display: block;
+  }
+
+  .ms-wrapper-demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .ms-wrapper-demo #ib-wrapper-quick-search{
+    margin-top: 200px;
+  }
+</style>
+
+<body>
+  <div class="ms-wrapper-demo">
+  <div id="ib-wrapper-quick-search-rentals" class="ib-wrapper-quick-search-rentals"  data-boardid="101"></div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

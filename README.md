@@ -1,7 +1,6 @@
 ## Quick Search Rentals in React
 
 
-
 Para instalar las dependencias del proyecto.
 
 ```
