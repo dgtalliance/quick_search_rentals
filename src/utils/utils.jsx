@@ -29,7 +29,6 @@ export const initScript = () => {
     jQuery('body').removeClass('activeModalquickSearch')
   })
 
-
   jQuery(document).on('click', '.js-show-filter-date', function (e) {
     e.preventDefault()
 
@@ -73,10 +72,18 @@ export const generateSlug = params => {
   for (const prop in params) {
     if (params[prop] !== '') {
       if (cont === 1) {
-        request += `&${prop}=${params[prop]}`
+        if (prop === 'keyword') {
+          request += `&${prop}=${encodeURIComponent(params[prop])}`
+        } else {
+          request += `&${prop}=${params[prop]}`
+        }
       } else {
         cont++
-        request += `${prop}=${params[prop]}`
+        if (prop === 'keyword') {
+          request += `${prop}=${encodeURIComponent(params[prop])}`
+        } else {
+          request += `${prop}=${params[prop]}`
+        }
       }
     }
   }

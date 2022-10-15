@@ -20,11 +20,11 @@ const FilterPickerDate = () => {
 
   // Constants
   const options = [
-    { label: t('exact_date'), value: 0 },
-    { label: '± 1 '+t('days'), value: 1 },
-    { label: '± 2 '+t('days'), value: 2 },
-    { label: '± 3 '+t('days'), value: 3 },
-    { label: '± 7 '+t('days'), value: 7 },
+    { label: t('Exact date'), value: 0 },
+    { label: '± 1 '+t('Days'), value: 1 },
+    { label: '± 2 '+t('Days'), value: 2 },
+    { label: '± 3 '+t('Days'), value: 3 },
+    { label: '± 7 '+t('Days'), value: 7 },
   ]
 
   // Stores
@@ -95,7 +95,7 @@ const FilterPickerDate = () => {
   }
 
   function transformDate(fecha) {
-    return fecha === '' ? t('add_dates') : moment(fecha).format('MMM DD')
+    return fecha === '' ? t('Add dates') : moment(fecha).format('MMM DD')
   }
 
   const cleanDateAll = e => {
@@ -250,7 +250,7 @@ const FilterPickerDate = () => {
           onClick={() => (intOutSelection.current = 'in')}
         >
           <span id='text-check-in' data-text='Check in'>
-            {t('check_in')}
+            {t('Check in')}
           </span>
           <div className='ib-min-text'>
             <span className='-date'> {transformDate(checkIn)}</span>
@@ -278,7 +278,7 @@ const FilterPickerDate = () => {
           onClick={() => (intOutSelection.current = 'out')}
         >
           <span id='text-check-out' data-text='Check out'>
-          {t('check_out')}
+          {t('Check out')}
           </span>
           <div className='ib-min-text'>
             <span className='-date'> {transformDate(checkOut)}</span>

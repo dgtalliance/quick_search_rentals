@@ -223,7 +223,7 @@ const Complete = () => {
         className={isError ? 'error' : ''}
         value={keyword}
         size='large'
-        placeholder={t('enter_address_city_zip_or_mls')}
+        placeholder={t('Enter Address, City, Zip Code or MLS')}
         onKeyPress={e => {
           setKeyword(e.target.value)
         }}

@@ -9,14 +9,14 @@ import {
 } from '../store/slices/propertiesAutoComplete'
 import { fetchAsyncAutoComplete } from '../store/actions/propertiesAutoComplete'
 import { useEffect } from 'react'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 initScript()
 const { VITE_APP_ENV } = import.meta.env
 
 const QuickSearch = () => {
-  const { t } = useTranslation();
-  
+  const { t } = useTranslation()
+
   const dispatch = useDispatch()
   const params = useSelector(getparams)
 
@@ -40,15 +40,18 @@ const QuickSearch = () => {
     const urls = '/vacation-rentals/?'
     const paramsUrl = generateSlug(params)
     const hostName =
-      VITE_APP_ENV === 'dev' ? 'http://127.0.0.1:5174' : window.location.origin
+      VITE_APP_ENV === 'dev' ? 'http://localhost:3001' : window.location.origin
+
     const linkToOpen = hostName + urls + paramsUrl
 
-    if (params.keyword !== '' || (params.check_in !== '' && params.check_out !== '')) {
+    if (
+      params.keyword !== '' ||
+      (params.check_in !== '' && params.check_out !== '')
+    ) {
       window.open(linkToOpen)
-    }else{
+    } else {
       dispatch(updateError(true))
     }
-
   }
 
   return (
@@ -58,7 +61,7 @@ const QuickSearch = () => {
         <div className='ib-modal-quick-search'>
           <div className='ib-wrapper-modal'>
             <div className='ib-header-modal'>
-              <div className='ib-title'>{t('quick_search')}</div>
+              <div className='ib-title'>{t('Quick Search')}</div>
               <button
                 className='ib-close-modal js-close-quick-search-modal'
                 aria-label='Close modal'
@@ -90,14 +93,14 @@ const QuickSearch = () => {
 
             <div className='ib-footer-modal'>
               <a className='ib-link' onClick={searchReset}>
-                {t('clear')}
+                {t('Clear')}
               </a>
               <button
                 type='button'
                 className='ib-btn js-submit-filter'
                 onClick={quickSearchTerms}
               >
-                {t('botton_search')}
+                {t('Search')}
               </button>
             </div>
           </div>
