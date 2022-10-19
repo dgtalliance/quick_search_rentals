@@ -1769,9 +1769,9 @@ const gSettings = {
       },
     ],
     google_maps_api_key: 'AIzaSyBdlczEuxYRH-xlD_EZH4jv0naeVT1JaA4',
+    translateServiceUrl: 'https://translations-app.idxboost.dev',
   },
 }
 
 export const flexGlobalSettings =
   VITE_APP_ENV === 'dev' ? gSettings : window.__flex_g_settings
-
