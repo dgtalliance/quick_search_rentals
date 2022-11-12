@@ -14,7 +14,7 @@
         "@reduxjs/toolkit": "^1.8.5",
         "@sentry/react": "^7.13.0",
         "@sentry/tracing": "^7.13.0",
-        "antd": "^4.23.2",
+        "antd": "^4.24.0",
         "axios": "^0.27.2",
         "i18next": "^21.9.2",
         "i18next-browser-languagedetector": "^6.1.5",
