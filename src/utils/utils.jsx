@@ -65,6 +65,21 @@ export const initScript = () => {
   })
 }
 
+export const closedFilterDropdown = () => {
+  const obj = jQuery('.js-show-filter-date')
+  jQuery('.ib-guests-search .ib-wrapper-dropdown').removeClass(
+    'active-dp in out'
+  )
+  jQuery('.js-show-filter-date').removeClass('-show')
+  const parent = jQuery(obj).parents('.ib-wrapper-dropdown')
+  if (parent.hasClass('active')) {
+    parent.removeClass('active')
+  } else {
+    jQuery('.ib-guests-search .ib-wrapper-dropdown').removeClass('active')
+    parent.addClass('active')
+  }
+}
+
 // GENERATOR PARAMS
 export const generateSlug = params => {
   let request = ''

@@ -18,6 +18,8 @@ const initialState = {
     extra_day_out: '',
     extra_day_in: '',
     sort: 'avg_price-asc',
+    days_week:'',
+    number_week: 1
   },
 }
 

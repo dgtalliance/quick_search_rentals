@@ -1,5 +1,4 @@
 import { generateSlug, initScript } from '../utils/utils'
-import FilterPickerDate from './FilterPickerDate'
 import Complete from './AutoCompete'
 import { useDispatch, useSelector } from 'react-redux'
 import {
@@ -10,6 +9,7 @@ import {
 import { fetchAsyncAutoComplete } from '../store/actions/propertiesAutoComplete'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import FilterDateSelectByWeek from './FilterDateSelectByWeek';
 
 initScript()
 const { VITE_APP_ENV } = import.meta.env
@@ -80,7 +80,7 @@ const QuickSearch = () => {
                   </div>
 
                   {/* FilterPickerDate */}
-                  <FilterPickerDate />
+                  <FilterDateSelectByWeek />
                 </div>
               </div>
               {/*  <!--TODO ESTO VIENE DE RENTALS--> */}

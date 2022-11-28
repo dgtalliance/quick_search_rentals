@@ -16,7 +16,7 @@ const gSettings = {
   has_google_login_enabled: 'no',
   checkLeadUsername: 'https://api.idxboost.dev/leads/check_username',
   accessToken:
-    'YTMwN2M5ZDc3ZTcxNTNjOGUxZTU2YTQ5ZWM1NzBhN2UzOWRhYTg2MzM5MjA0N2YwMjMzMzU0N2QzNDYzMzMxMQ',
+    'MzM0NjgyNGI0MzMzZDQ5M2VhZThhMzM2MDZjZmQ0ZWY1Njk5NjYwNDcwM2VkN2M3ODA4MDIyM2I2YmIzMWRmYQ',
   boardId: '1',
   is_mobile: '',
   socketAuthUrl:
