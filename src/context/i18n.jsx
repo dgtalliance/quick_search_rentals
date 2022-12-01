@@ -12,6 +12,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    react: { 
+      useSuspense: false //   <---- this will do the magic
+    },
     backend: {
       loadPath: `${API_TRADUCCIONS_URL}/${slugApp}/${lang}`,
       allowMultiLoading: false,

@@ -258,7 +258,7 @@ export default function FilterDateSelectByWeek() {
           data-show='in'
         >
           <span id='text-check-in' data-text='Check in'>
-            {t('Check In')}
+            {t('Check-In')}
           </span>
           <div className='ib-min-text'>
             <span className='-date'> {transformDate(checkindate)}</span>

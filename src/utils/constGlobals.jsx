@@ -1390,7 +1390,7 @@ const gSettings = {
         value: 2022,
       },
     ],
-    default_language: 'en',
+    default_language: 'es',
     default_floor_plan: ['den', 'size_sqft', 'size_m2'],
     idx_listings_type: 1,
     hide_pending_content_options: 0,
