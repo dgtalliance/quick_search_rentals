@@ -124,9 +124,7 @@ export default function FilterDateSelectByWeek() {
       const checkOut = moment(new Date(checkindate))
         .add(numberWeek * 7, 'day')
         .format('YYYY-MM-DD')
-      const checkIn = moment(new Date(checkindate)).format('YYYY-MM-DD')
-      console.log(daysWeek.toString(), checkIn, checkOut, numberWeek)
-
+      const checkIn = moment(new Date(checkindate)).format('YYYY-MM-DD')      
       params = {
         check_in: checkIn,
         check_out: checkOut,
@@ -154,9 +152,7 @@ export default function FilterDateSelectByWeek() {
       const checkOut = moment(new Date(checkindateD))
         .add(numberWeekD * 7, 'day')
         .format('YYYY-MM-DD')
-      const checkIn = moment(new Date(checkindateD)).format('YYYY-MM-DD')
-      console.log(daysWeekD.join(','), checkIn, checkOut, numberWeekD)
-
+      const checkIn = moment(new Date(checkindateD)).format('YYYY-MM-DD')  
       params = {
         check_in: checkIn,
         check_out: checkOut,

@@ -67,7 +67,6 @@ const FilterPickerDate = () => {
     setChekOut(params.check_out === '' ? '' : params.check_out)
     setExtraDaysIn(params.extra_day_in === '' ? 0 : params.extra_day_in)
     setExtraDaysOut(params.extra_day_out === '' ? 0 : params.extra_day_out)
-    console.log()
     setState([
       {
         startDate:
