@@ -12,13 +12,9 @@ import { BrowserTracing } from '@sentry/tracing'
 import { Suspense } from 'react'
 import Loading from './components/Loading'
 
- Sentry.init({
-  dsn: "https://321bd1acb87940a49068ee8e7533d020@o176772.ingest.sentry.io/6396526",
+ Sentry.init({  
+  dsn: "https://f3b3aa5b0f6548d191fd7bb7972bbcf6@o176772.ingest.sentry.io/4504282707066880",
   integrations: [new BrowserTracing()],
-
-  // Set tracesSampleRate to 1.0 to capture 100%
-  // of transactions for performance monitoring.
-  // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
 });
  
